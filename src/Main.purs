@@ -17,7 +17,7 @@ fizzbuzz u =
     let transform i | toNumber i % 15.0 == 0.0 = "FizzBuzz"
                     | toNumber i %  5.0 == 0.0 = "Buzz"
                     | toNumber i %  3.0 == 0.0 = "Fizz"
-                    | otherwise   = show i
+                    | otherwise                = show i
      in intercalate "\n" (transform <$> 1..u)
 
 
